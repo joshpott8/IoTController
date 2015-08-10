@@ -11,11 +11,25 @@ import android.view.ViewGroup;
  */
 public class ScreenSlidePageFragment extends Fragment {
 
+    private int pos;
+
+    public ScreenSlidePageFragment(int i){
+        pos = i;
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = (View) inflater.inflate(R.layout.function_frag, container, false);
 
         return rootView;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+
+
     }
 }

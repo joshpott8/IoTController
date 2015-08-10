@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int i) {
-            return new ScreenSlidePageFragment();
+            return ScreenSlidePageFragment.create(i);
         }
 
         @Override
